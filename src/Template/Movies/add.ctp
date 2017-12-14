@@ -9,7 +9,7 @@
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('List Movies'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Showtimes'), ['controller' => 'Showtimes', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Showtime'), ['controller' => 'Showtimes', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Room'), ['controller' => 'Rooms', 'action' => 'index']) ?></li>
     </ul>
 </nav>
 <div class="movies form large-9 medium-8 columns content">
@@ -20,6 +20,7 @@
             echo $this->Form->control('name');
             echo $this->Form->control('description');
             echo $this->Form->control('duration');
+            echo $this->Form->control('release_date');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
